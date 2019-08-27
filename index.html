@@ -4,11 +4,33 @@
         <meta charset="utf-8"/>
         <script src="https://unpkg.com/@tensorflow/tfjs"></script>
         <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+        <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+        <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
-        <div id="console"></div>
+        <div class='menu-container'>
+                    <div class='menu'>
+                        <p>Class A</p>
+                        <p>Class B</p>
+                        <p>Class C</p>
+                    </div>
+        </div>
+        <div class="photo-grid-container">
+            <div id="imgs-0" class="photo-grid"></div>
+            <div id="imgs-1" class="photo-grid"></div>
+            <div id="imgs-2" class="photo-grid"></div>
+        </div>
         <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+        
+        
+        <div class="photo-grid-container">
+        <button id="class-a">Class A</button>
+        <button id="class-b">Class B</button>
+        <button id="class-c">Class C</button>
+        </div>
+        <div id="console"></div>
+        <canvas id="canvas" width="224" height="224" style="display:none"></canvas>
         <script src="index.js"></script>
-
+        
     </body>
 </html>
