@@ -1,39 +1,37 @@
-* {
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-
-body{
-    color: darkslategrey;
-    background-color: lightgrey;
-    font-family: "Helvetica", "Arial", sans-serif;
-    font-size: 16px;
-    line-height: 1.3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-  
-  .menu-container {
+  .header {
     color: #fff;
     background-color: black;  
-    padding: 20px 0;
-    display: flex;
-    justify-content: center; 
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Helvetica,Arial, sans-serif;
+  }
+  .page {
+    width: 1000px;
+    margin: 0 auto;
   }
   
-  .menu {
-    
-    width: 900px;
-    display: flex;
-    justify-content: space-around;
+ 
+  .sidebar {
+    float:left;
+    width: 300px;                 
   }
 
-.photo-grid-container {
-    display: flex;
-    justify-content: center;
+  .content {
+    float: left;                  /* Add this */
+    width: 600px;
+    display: block;
+    justify-items: center;
+  }
+
+  .photo-grid-container {
+      display: flex;
+      justify-content: center;
   }
   
   .photo-grid {
@@ -54,18 +52,10 @@ body{
     font-size: 16px;
     font-weight: bold;
     color: #FFFFFF;
-    background-color: #5995DA;
     border: none;
     border-radius: 3px;  
-    padding: 10px 40px;
-    margin: 0px 10px;    
+    padding: 10px 20px;
+    margin: 0px 4px;    
     cursor: pointer;
   }
   
-  button:hover {
-    background-color: #76AEED;
-  }
-  
-  button:active {
-    background-color: #407FC7;
-  }

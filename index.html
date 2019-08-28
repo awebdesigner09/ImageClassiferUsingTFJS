@@ -8,29 +8,34 @@
         <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
-        <div class='menu-container'>
-                    <div class='menu'>
-                        <p>Class A</p>
-                        <p>Class B</p>
-                        <p>Class C</p>
-                    </div>
+        <div class="header">
+            Image classifier using Tensorflow.js
         </div>
-        <div class="photo-grid-container">
-            <div id="imgs-0" class="photo-grid"></div>
-            <div id="imgs-1" class="photo-grid"></div>
-            <div id="imgs-2" class="photo-grid"></div>
-        </div>
-        <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
-        
-        
-        <div class="photo-grid-container">
-        <button id="class-a">Class A</button>
-        <button id="class-b">Class B</button>
-        <button id="class-c">Class C</button>
-        </div>
-        <div id="console"></div>
-        <canvas id="canvas" width="224" height="224" style="display:none"></canvas>
-        <script src="index.js"></script>
-        
+
+              
+          <div class='page'>
+            <div class='sidebar'>
+                <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+                <div id="console"></div>            
+            </div>
+            
+            <div class='content'>
+                <div class="photo-grid-container">
+                    <button id="class-a" style="background-color: blueviolet">Class A</button>
+                    <button id="class-b" style="background-color: salmon">Class B</button>
+                    <button id="class-c" style="background-color: sandybrown">Class C</button>
+                </div>
+                <div class="photo-grid-container">
+                    <div id="imgs-0" class="photo-grid"></div>
+                    <div id="imgs-1" class="photo-grid"></div>
+                    <div id="imgs-2" class="photo-grid"></div>
+                </div>
+                <canvas id="canvas" width="224" height="224" style="display:none"></canvas>
+                <script src="index.js"></script>
+            </div>
+          </div>
+                                   
+      
+       
     </body>
 </html>
